@@ -1,0 +1,49 @@
+
+
+<html> 
+
+<head>
+    <title>NodeJs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--bootstrap bản củ-->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+   
+    <!--load CDN-->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/remove.js"></script>
+</head>
+
+<body  style="   background-color:white; font-size: 25px;">
+    <div class="container">
+        <br><br><br>
+        <img src="assets/img/5.PNG" class="img-circle" alt="Cinque Terre" width="200" height="150"> 
+        <h1 style="color: rgb(35, 189, 35);">Log in</h1>
+        <form method="POST" action ="/login">
+            Username: <input type="text" name ="username" placeholder="username"/>
+            <br/>
+            Password : <input type="text" name="password" placeholder="password"/>
+            <br/><br/>
+        <input style="color: rgb(19, 167, 212);" type="submit" value="submit"/>
+
+
+        <!--
+        <script>
+            $.ajax({
+                type: "POST",
+                url: "/loginjson",
+                data: JSON.stringify({ firstName: "Hoa", lastName: "Mai"}),
+                dataType:"json",
+                contentType:"application/json"
+            })
+        </script>
+        -->
+    </div>
+</body>
+
+</html>

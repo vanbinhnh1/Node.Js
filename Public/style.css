@@ -1,0 +1,28 @@
+
+html{
+    overflow-y:scroll;
+}
+
+body {
+    background-color: rgb(231, 229, 116);
+    margin-top:50px;
+}
+
+h1 {
+    color: green;
+
+}
+
+p {
+    font-family: verdana;
+    color: red;
+}
+#todo-list{
+    margin-bottom:40px;
+}
+#todo-form{
+    margin-bottom:50px;
+}
+.strike{
+    text-decoration:line-through;
+}
