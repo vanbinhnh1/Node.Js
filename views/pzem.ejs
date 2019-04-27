@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Node.js</title>
+        
+    </head>
+  <body>
+        
+        
+        <p1>Voltage:::</p1></br></br>
+        <p1>Current</p1></br></br>
+        <p1>Power</p1></br></br>
+        <p1>Energy</p1></br></br>
+  
+        <p id="p1">No data</p></br>
+    
+        <script>
+            var mqtt=require("mqtt")
+            var client = mqtt.connect("mqtt://m14.cloudmqtt.com", {
+              username: "oivukdsj",
+              password: "cWXO3ZZ1L3-v",
+              port: 16099,
+              clientId: "WebUI"
+          })
+          client.on('connect',  () => {
+            client.subscribe('room/vol');
+          })
+           client.on("error", function(e) {
+              console.log(e)
+          })
+          client.on("close", function(e)  {
+              client.reconnect()
+          })
+          client.on('message',  (topic, message) => {
+            document.getElementById("p1").innerHTML = message.toString();
+          })
+          
+         
+        </script> 
+  </body>
+</html>

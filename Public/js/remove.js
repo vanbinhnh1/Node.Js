@@ -1,3 +1,22 @@
+/*var mqtt=require("mqtt")
+
+client.on("message", function(topic, message) {
+	switch(topic) {      
+		case "led1":
+		{
+			if("message"==0) 
+				$(document).ready(function(){               
+					$("#div1").load(on())
+				})
+			
+			if("message"==1)  
+				$(document).ready(function(){
+					$("#div1").load(off())
+				})
+		}
+	}
+})
+*/
 
 $(document).ready(() => {
 	$(document).on('click', '.s-on', () => {
@@ -34,7 +53,7 @@ $(document).ready(() => {
 		});
 	});
 	*/
-
+})
 	const on = () => {
 		$(".s-on").click(function(){
 			$(".tat").hide();
@@ -53,7 +72,7 @@ $(document).ready(() => {
 			$(".tat").show();
 		})
 	}
-})
+
 
 	/*
 	const updateUI = (status) => {
